@@ -3,38 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Good Night Harsha Bro</title>
+  <title>Jaswanth Kumar Website</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       font-family: 'Segoe UI', sans-serif;
-      overflow: hidden;
+      overflow-x: hidden;
+      background: black;
+      animation: discoBG 10s infinite alternate;
+      color: white;
+    }
+
+    @keyframes discoBG {
+      0%   {background: #000000;}
+      25%  {background: #1a0033;}
+      50%  {background: #330066;}
+      75%  {background: #660099;}
+      100% {background: #9900cc;}
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff00ff, #00ffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .good-night {
-      color: #fff;
-      font-size: 3rem;
       text-align: center;
-      animation: glow 2s ease-in-out infinite alternate;
+      font-size: 3rem;
+      margin-top: 30px;
+      animation: glow 1.5s ease-in-out infinite alternate;
     }
 
     @keyframes glow {
       from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #00ffff;
       }
       to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff;
+        text-shadow: 0 0 20px #fff, 0 0 40px #00ffff, 0 0 60px #ff00ff;
       }
+    }
+
+    .image-box {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .image-box img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.2rem;
+      background-color: #111;
+      color: #fff;
+    }
+
+    footer a {
+      color: #ff00ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
+  <header>Jaswanth Kumar Website</header>
+
   <div class="good-night">Good Night Harsha Bro 🌙</div>
+
+  <div class="image-box">
+    <!-- Replace below image src with your desired image link -->
+    <img src="https://via.placeholder.com/300x200.png?text=Your+Image+Here" alt="Harsha Bro Image" />
+  </div>
+
+  <footer>
+    Contact Me: <a href="https://instagram.com/kjk_06_2007" target="_blank">@kjk_06_2007</a>
+  </footer>
+
 </body>
 </html>
