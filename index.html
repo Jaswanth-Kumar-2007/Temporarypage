@@ -23,14 +23,46 @@
       100% {background: #9900cc;}
     }
 
-    header {
-      text-align: center;
-      padding: 20px;
-      font-size: 2.5rem;
-      font-weight: bold;
-      background: linear-gradient(45deg, #ff00ff, #00ffff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+   .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+    }
+
+    .menu-button {
+      font-size: 24px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .menu-button:hover {
+      transform: scale(1.2);
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      overflow: hidden;
+      z-index: 999;
+    }
+
+    .menu a {
+      display: block;
+      padding: 12px 20px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      background-color: #f0f0f0;
     }
 
     .good-night {
@@ -103,7 +135,17 @@
 </head>
 <body>
 
-  <header>Jaswanth Kumar Website</header>
+  <div class="header">
+    <div><strong>Jaswanth Kumar</strong></div>
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="https://jaswanth-kumar-2007.github.io/websiterequirement/" id="favours-link">My Favours</a>
+    <a href="https://www.linkedin.com/in/jaswanth-kumar-kamireddi-86ba09373/">Linkedin</a>
+    <a href="https://jaswanth-kumar-2007.github.io/Temporarypage/">Creations</a>
+  </div>
 
   <div class="good-night">Good Morning Harsha Bro ☀️</div>
 
