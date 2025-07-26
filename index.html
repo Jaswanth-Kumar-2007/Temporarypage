@@ -147,6 +147,20 @@
     <a href="https://jaswanth-kumar-2007.github.io/Temporarypage/">Creations</a>
   </div>
 
+   <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    // Close menu if clicked outside
+    window.addEventListener("click", function(e) {
+      if (!e.target.closest('.menu-button') && !e.target.closest('.menu')) {
+        document.getElementById("menu").style.display = "none";
+      }
+    });
+  </script>
+
   <div class="good-night">Good Morning Harsha Bro ☀️</div>
 
   <div class="image-box">
