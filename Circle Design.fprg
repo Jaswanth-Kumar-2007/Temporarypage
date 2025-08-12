@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Circle Design"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 03:43:59 PM"/>
+        <attribute name="created" value="VXNlcjtCMzYwSDUtTTE0OzIwMjUtMDgtMTI7MDM6MDY6MTAgUE07MjI1Ng=="/>
+        <attribute name="edited" value="VXNlcjtCMzYwSDUtTTE0OzIwMjUtMDgtMTI7MDM6NDM6NTkgUE07MTsyMzc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="2000" direction="inc" step="1">
+                <call expression="move"/>
+                <call expression="circle"/>
+            </for>
+        </body>
+    </function>
+    <function name="circle" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="360" direction="inc" step="1">
+                <turn expression="1" rotate="right"/>
+                <forward expression="10" pen="down"/>
+            </for>
+        </body>
+    </function>
+    <function name="move" type="None" variable="">
+        <parameters/>
+        <body>
+            <pen color="red"/>
+            <turn expression="15" rotate="right"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Too High or Too Low"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 03:02:16 PM"/>
+        <attribute name="created" value="VXNlcjtCMzYwSDUtTTE0OzIwMjUtMDgtMTI7MDI6MzA6MzAgUE07MjI1NA=="/>
+        <attribute name="edited" value="VXNlcjtCMzYwSDUtTTE0OzIwMjUtMDgtMTI7MDM6MDI6MTYgUE07MjsyMzY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Number&quot;" newline="True"/>
+            <input variable="num"/>
+            <while expression="num != 48">
+                <if expression="num &gt; 48">
+                    <then>
+                        <output expression="&quot;Number is too High&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Number is Too Low&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="count" expression="count + 1"/>
+                <output expression="&quot;Enter Number&quot;" newline="True"/>
+                <input variable="num"/>
+            </while>
+            <output expression="count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

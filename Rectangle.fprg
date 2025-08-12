@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Rectangle"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 04:11:17 PM"/>
+        <attribute name="created" value="VXNlcjtCMzYwSDUtTTE0OzIwMjUtMDgtMTI7MDM6NDY6MjEgUE07MjI2Mg=="/>
+        <attribute name="edited" value="VXNlcjtCMzYwSDUtTTE0OzIwMjUtMDgtMTI7MDQ6MTE6MTcgUE07MjsyMzY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <forward expression="300" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="400" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="300" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="400" pen="down"/>
+            <turn expression="143" rotate="left"/>
+            <forward expression="500" pen="down"/>
+            <turn expression="127" rotate="left"/>
+            <forward expression="300" pen="down"/>
+            <turn expression="127" rotate="left"/>
+            <forward expression="500" pen="down"/>
+        </body>
+    </function>
+</flowgorithm>
